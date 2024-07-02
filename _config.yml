@@ -1,7 +1,7 @@
 # site settings
 title: Forty
 subtitle: by HTML5 UP
-email: youremailaddress@gmail.com
+email: oluwatobi.adetula1@gmail.com
 description: A responsive site template designed by HTML5 Up<br /> and released under the Creative Commons.
 baseurl: "/forty-jekyll-theme" # the subpath of your site, e.g. /blog
 url: # the base hostname & protocol for your site
@@ -26,12 +26,12 @@ tiles-count: 6
 # Icons are not shown if value is empty
 # You need to restart jekyll for changes to have an effect
 socials:
-  GitHub: https://github.com/andrewbanchich
+  GitHub: https://github.com/tobiadetula
   GitLab:
-  Google-Plus: https://plus.google.com/u/0/+AndrewBanchich
+  # Google-Plus: https://plus.google.com/u/0/tobiadetula
   Instagram:
-  LinkedIn: https://www.linkedin.com/in/andrew-banchich-a4ba1195
-  Twitter: https://twitter.com/andrewbanchich
+  LinkedIn: https://www.linkedin.com/in/tobiadetula
+  Twitter: https://twitter.com/tobiadetula
   Facebook:
   Slack:
 
