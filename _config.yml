@@ -1,17 +1,17 @@
 # site settings
-title: Forty
-subtitle: by HTML5 UP
+title: Blog
+subtitle: by Tobi Adetula
 email: oluwatobi.adetula1@gmail.com
-description: A responsive site template designed by HTML5 Up<br /> and released under the Creative Commons.
+description: It's taken a while to get into the embedded field<br /> and I wanted to share the journey.
 # baseurl: "/forty-jekyll-theme" # the subpath of your site, e.g. /blog
 url: # the base hostname & protocol for your site
 author:
-street_address: 1234 Somewhere Road
-city: Nashville
-state: TN
-zip_code: 55555
-country: United States of America
-phone: (716) 555-5555
+street_address: 
+city: 
+state: Lagos
+zip_code: 
+country: Nigeria
+phone: +234 (905) 229-3937
 
 domain: blog.tobiadetula.com      # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
 url: https://blog.tobiadetula.com   # the base hostname and protocol for your site, e.g. http://example.com
