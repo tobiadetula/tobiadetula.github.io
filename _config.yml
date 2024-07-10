@@ -1,48 +1,66 @@
-# site settings
-title: Blog
-subtitle: by Tobi Adetula
-email: oluwatobi.adetula1@gmail.com
-description: It's taken a while to get into the embedded field<br /> and I wanted to share the journey.
-# baseurl: "/forty-jekyll-theme" # the subpath of your site, e.g. /blog
-url: # the base hostname & protocol for your site
-author:
-street_address: 
-city: 
-state: Lagos
-zip_code: 
-country: Nigeria
-phone: +234 (905) 229-3937
+# Site
+name: 'Mundana'
+description: 'Mundana is a free Jekyll theme for awesome people like you, Medium like.'
+logo: 'assets/images/logo.png'
+favicon: 'assets/images/favicon.ico'
+# baseurl: '/mundana-theme-jekyll'
+baseurl: ''
+disqus: 'demowebsite'
+email: 'wowthemesnet@gmail.com'
+mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
 
-domain: blog.tobiadetula.com      # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
-url: https://blog.tobiadetula.com   # the base hostname and protocol for your site, e.g. http://example.com
-# baseurl: /REPOSITORY-NAME/      # place folder name if the site is served in a subfolder
+include: ["_pages"]
+permalink: /:title/
 
-# homepage tiles
-tiles-source: pages # accepts "posts" or "pages"
-tiles-count: 6
+# Plugins
+plugins: 
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-seo-tag
+  
+authors:
+    sal:
+      name:           Sal
+      site:           https://www.wowthemes.net
+      avatar:         /assets/images/avatar1.jpg
+      bio:            "Hi, I am Sal, the author of Mundana, the theme you're currently previewing. I hope you like it!"
+      email:          wowthemesnet@gmail.com
+      twitter:        https://twitter.com/wowthemesnet
 
-# social settings (key must match name of font awesome icon)
-# see https://fontawesome.com/icons?d=gallery&p=2&s=brands
-# Icons are not shown if value is empty
-# You need to restart jekyll for changes to have an effect
-socials:
-  GitHub: https://github.com/tobiadetula
-  GitLab:
-  # Google-Plus: https://plus.google.com/u/0/tobiadetula
-  Instagram:
-  LinkedIn: https://www.linkedin.com/in/tobiadetula
-  Twitter: https://twitter.com/tobiadetula
-  Facebook:
-  Slack:
+    jane:
+      name:           Jane
+      site:           https://www.wowthemes.net
+      avatar:         /assets/images/avatar2.jpg
+      bio:            "Blogger, fashionista, love to explore new ideas and write on my morning coffee!"
+      email:          fakemail@gmail.com
+      twitter:        https://twitter.com/wowthemesnet
+ 
+# Defaults
+defaults:
 
-# build settings
+  # all posts
+  - scope:
+      path: "_posts"
+    values:
+      layout: post
+      author: sal
+      avatar: /assets/images/avatar1.jpg
+      
+  # all pages
+  - scope:
+      path: "_pages"
+    values:
+      layout: page
+      
+# Syntax
 markdown: kramdown
+highlighter: rouge
 
-sass:
-  style: compressed
+# Paginate
+paginate: 10
 
-exclude:
-- "*.gemspec"
-- LICENSE.md
-- CONTRIBUTING.md
-- README.md 
+
+
+# Exclude metadata and development time dependencies (like Grunt plugins)
+exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules,LICENSE.md,CONTRIBUTING.md]
